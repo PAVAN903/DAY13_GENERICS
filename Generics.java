@@ -28,8 +28,8 @@ public class Generics <T extends Comparable<T>> {
 		return Max;
 	    }	
 	public static <T> void printMax(T Max) {
-		System.out.println("maximum float value is:: "+Max);  //to print maximum value
-		};
+		System.out.println("maximum string value is:: "+Max);  //to print maximum value
+		}
 		
     public static void main(String[] args) {
     	// int a;int b;int c;
@@ -41,14 +41,25 @@ public class Generics <T extends Comparable<T>> {
     	  //System.out.println("enter third integer value");
     	  //c=sc.nextInt();
     	
-    	  float a;float b;float c;
+    	//  float a;float b;float c;
+    	 // Scanner sc=new Scanner(System.in);
+    	 // System.out.println("enter first float value");
+    	 // a=sc.nextFloat();
+    	//  System.out.println("enter second float value");
+    	//  b=sc.nextFloat();
+    	//  System.out.println("enter third float value");
+    	//  c=sc.nextFloat();
+    	
+    	
+    	  String a; String b; String c;
     	  Scanner sc=new Scanner(System.in);
-    	  System.out.println("enter first float value");
-    	  a=sc.nextFloat();
-    	  System.out.println("enter second float value");
-    	  b=sc.nextFloat();
-    	  System.out.println("enter third float value");
-    	  c=sc.nextFloat();
+    	  System.out.println("enter first string ");
+    	  a=sc.nextLine();
+    	  System.out.println("enter second string ");
+    	  b=sc.nextLine();
+    	  System.out.println("enter third string ");
+    	  c=sc.nextLine();
+    	  
     	  
 		  
     	  new Generics( a, b, c).Max();  //comparing with 3 int max value
